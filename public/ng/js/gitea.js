@@ -530,6 +530,15 @@ function initCore() {
     $('.tipsy-tooltip').tipsy({
         fade: true
     });
+    $('input[type=password]').hideShowPassword({
+      show: false,
+      innerToggle: true,
+      wrapper: {
+          enforceWidth: false,
+          styles: {},
+          inheritStyles: []
+      }
+    });
 }
 
 function initUserSetting() {
